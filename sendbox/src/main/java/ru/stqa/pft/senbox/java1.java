@@ -6,12 +6,11 @@ public class java1 {
        hello("world");
        hello("user");
 
-       Square s=new Square();
-       s.l=5;
+       Square s=new Square(5);
+       
        System.out.println(s.l+"="+area(s));
-       Reqtangle r=new Reqtangle();
-       r.a=4;
-       r.b=6;
+       Reqtangle r=new Reqtangle(4,6);
+
        System.out.println(r.a+" и "+r.b+'='+area(r));
    }
    public static void hello(String somebody){
