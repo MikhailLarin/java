@@ -1,7 +1,7 @@
 package ru.stqa.pft.senbox;
 
-import ru.stqa.pft.senbox.Reqtangle;
 import ru.stqa.pft.senbox.Square;
+import ru.stqa.pft.senbox.Reqtangle;
 
 public class java1 {
    public static void main(String[] args) {
@@ -15,7 +15,7 @@ public class java1 {
 
        System.out.println(r.a+" и "+r.b+'='+r.area());
    }
-   public static void hello(String somebody){
+   public static void hello(String somebody) {
        System.out.println("Hello "+somebody+"!");
    }
 
