@@ -12,14 +12,15 @@ public class FakerTestBase {
 
     @BeforeClass(alwaysRun = true)
     public void setUp() throws Exception {
-      app.driver();
-      app.start();
-      app.driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        app.driver();
+        app.start();
+        app.driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     }
 
     @AfterClass(alwaysRun = true)
     public void tearDown() throws Exception {
-      app.exit();
+        app.exit();
     }
+
 
 }

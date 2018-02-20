@@ -5,10 +5,18 @@ import ru.mlarin.test.tests.FakerTestBase;
 
 public class FakerTestButton extends FakerTestBase {
 
+
+
   @Test
   public void testFaker() throws Exception {
     app.getFaker();
     app.find();
+    app.click();
+
+
+
+
+
   }
 
 }
