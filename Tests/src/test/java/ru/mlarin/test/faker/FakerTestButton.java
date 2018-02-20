@@ -1,7 +1,8 @@
-package ru.mlarin.test;
+package ru.mlarin.test.faker;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -27,7 +28,8 @@ public class FakerTestButton {
   @Test
   public void testFaker() throws Exception {
     driver.get("http://10.65.50.54:1313/setconfig");
-    isElementEnabled("submitApplyServerAddress");
+    Assert.assertEquals(isElementEnabled("submitApplyServerAddress"), true);
+
 
   }
 
