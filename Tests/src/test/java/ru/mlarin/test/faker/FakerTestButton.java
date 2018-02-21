@@ -2,11 +2,12 @@ package ru.mlarin.test.faker;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import static org.testng.Assert.fail;
@@ -22,14 +23,13 @@ public class FakerTestButton {
     System.setProperty("webdriver.chrome.driver", "/home/mlarin/chromedriver");
     driver = new ChromeDriver();
     baseUrl = "https://www.google.com";
-    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+    driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
   }
 
   @Test
   public void testFaker() throws Exception {
     driver.get("http://10.65.50.54:1313/setconfig");
-    Assert.assertEquals(isElementEnabled("submitApplyServerAddress"), true);
-
+    isElementEnabled();
 
   }
 
@@ -41,13 +41,25 @@ public class FakerTestButton {
       fail(verificationErrorString);
     }
   }
-  private boolean isElementEnabled(String locator) {
-    if (driver.findElement(By.id(locator)).isEnabled()) {
-      return true;
-    } else {
-      return false;
+  private boolean isElementEnabled(String ) {
+    List<WebElement> elements=new ArrayList<WebElement>();
+    List<WebElement> buttons=driver.findElements(By.cssSelector(".btn.btn-outline-primary.btn-block"));
+    for (WebElement button : buttons) {
+      if (button.isEnabled()) {
+        return true;
+      }
     }
+    return false;
   }
+
+
+//  private boolean isElementEnabled(String locator) {
+//    if (driver.findElement(By.id(locator)).isEnabled()) {//
+//      return true;
+//    } else {
+//      return false;
+//    }
+//  }
 
   private boolean isElementPresent(By by) {
     try {
