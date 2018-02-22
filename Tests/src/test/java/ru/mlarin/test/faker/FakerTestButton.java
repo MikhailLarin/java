@@ -2,7 +2,6 @@ package ru.mlarin.test.faker;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -29,7 +28,7 @@ public class FakerTestButton {
   @Test
   public void testFaker() throws Exception {
     driver.get("http://10.65.50.54:1313/setconfig");
-    Assert.assertEquals(isElementEnabled(), true);
+    isElementEnabled();
 
   }
 
@@ -41,15 +40,15 @@ public class FakerTestButton {
       fail(verificationErrorString);
     }
   }
-  public boolean isElementEnabled() {
+  public void isElementEnabled() {
     List<WebElement> buttons=driver.findElements(By.cssSelector(".btn.btn-outline-primary.btn-block"));
     for (WebElement button : buttons) {
       if (button.isEnabled()) {
-        return false;
+        button.click();
         }
 
     }
-    return true;
+
   }
 
 
