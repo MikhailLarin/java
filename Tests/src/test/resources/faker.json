@@ -1,0 +1,21 @@
+{
+  "serverAddress": "mlarin",
+  "globalDelayFrom": "",
+  "globalDelayTo": "",
+  "responseList": [
+    {
+      "path": "test",
+      "query": null,
+      "customDelayFrom": "",
+      "customDelayTo": "",
+      "accumulationDelay": null,
+      "httpCode": "",
+      "contentType": "application/xml",
+      "customContentType": "",
+      "replyType": "As Is",
+      "dontSendRequest": null,
+      "findEditingPart": "",
+      "reply": "adawfaw"
+    }
+  ]
+}
