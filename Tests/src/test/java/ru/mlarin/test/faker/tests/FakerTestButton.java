@@ -5,8 +5,8 @@ import org.testng.annotations.Test;
 public class FakerTestButton extends FakerTestBase {
 
   @Test
-  public void testFaker() throws Exception {
-    app.getFakerHelper().isElementEnabled();
+  public void testFakerButton() throws Exception {
+    app.getFakerHelper().isButtonEnabled();
 
   }
 

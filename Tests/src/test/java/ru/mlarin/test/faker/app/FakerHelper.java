@@ -3,6 +3,7 @@ package ru.mlarin.test.faker.app;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
+import java.io.File;
 import java.util.List;
 
 public class FakerHelper {
@@ -11,7 +12,7 @@ public class FakerHelper {
 
     private final FakerSessionHelper fakerSessionHelper = new FakerSessionHelper();
 
-    public void isElementEnabled() {
+    public void isButtonEnabled() {
       List<WebElement> buttons= fakerSessionHelper.driver.findElements(By.cssSelector(".btn.btn-outline-primary.btn-block"));
       for (WebElement button : buttons) {
         if (button.isEnabled()) {
@@ -19,6 +20,15 @@ public class FakerHelper {
           }
 
       }
+
+    }
+    public void uploadFile(File file) {
+
+
+
+        fakerSessionHelper.driver.findElement(By.id("uploadFile")).sendKeys(file.getAbsolutePath());
+
+        fakerSessionHelper.driver.findElement(By.id("submitUploadFile")).click();
 
     }
 
