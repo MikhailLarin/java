@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Instagram.iml" filepath="$PROJECT_DIR$/.idea/modules/Instagram.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Instagram_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Instagram_main.iml" group="Instagram" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Instagram_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Instagram_test.iml" group="Instagram" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Tests.iml" filepath="$PROJECT_DIR$/.idea/modules/Tests.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Tests_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Tests_main.iml" group="Tests" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Tests_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Tests_test.iml" group="Tests" />

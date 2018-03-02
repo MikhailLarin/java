@@ -3,7 +3,7 @@ package ru.mlarin.test.faker.tests;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-public class DPTest {
+public class DPTest extends FakerTestBase {
 
     @DataProvider
     public Object[][] translationDP(){

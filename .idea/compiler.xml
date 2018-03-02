@@ -4,8 +4,10 @@
     <bytecodeTargetLevel>
       <module name="addressbook-web-tests_main" target="1.8" />
       <module name="addressbook-web-tests_test" target="1.8" />
-      <module name="sendbox_main" target="1.8" />
-      <module name="sendbox_test" target="1.8" />
+      <module name="Instagram_main" target="1.8" />
+      <module name="Instagram_test" target="1.8" />
+      <module name="sendbox_main" target="1.9" />
+      <module name="sendbox_test" target="1.9" />
       <module name="Tests_main" target="1.8" />
       <module name="Tests_test" target="1.8" />
     </bytecodeTargetLevel>
